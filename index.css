@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/candy.ttf');
+}
+:root {
+    --subgreen: #25b79faa;
+    --green: #25b79f;
+    --dark-blue: #07374a;
+    --off-white:#f0f0e6;
+    --transparent:#ffffff00;
+    --subblack:#07374a43;
+    --fullblack:#07374af2;
+    --subwhite:#ffffff9b;
+    --fullwhite:#ffffff;
+    --ghostwhite:#f8f8ff;
+    --subghostwhite:#f8f8ff6f;
+    scroll-behavior: smooth;
+
+    --navbar-height:6rem;
+  }
+
+html {
+
+    scroll-behavior: smooth;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    background-color: yellow;
+    margin:0px;
+    padding: 0px;
+}
+/* Common CSS Classes */
+.blankDiv{
+    min-height: var(--navbar-height);
+    background-color: yellow;
+}
+
+/* NavBar CSS Classes */
+.navContainer{
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--navbar-height);
+    min-width: 100vw;
+    
+}
+.bgblue{
+    transition: 0.1s ease;
+    background-color: var(--dark-blue);
+}
+.bggreen{
+    transition: 0.1s ease;
+    /* background-color: var(--green); */
+    background-color: var(--subgreen);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90%;
+}
+.navname{
+    color:var(--ghostwhite)
+}
+.navname.transparent{
+    color:var(--transparent)
+}
+.navbuttons{
+    display: flex;
+}
+.navbutton{
+    /* background-color: var(--green); */
+    border: 2px solid var(--transparent);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color:var(--ghostwhite);
+
+}
+.navbutton:hover{
+    border: 2px solid var(--off-white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Title Div Contents */
+.titleDiv{
+    /* display: none; */
+    background-color: var(--green);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleName{
+    font-size: 4.5rem;
+}
+.titleDesc{
+    color:#f8f8ff;
+}
+
+/* About Div Contents */
+.aboutDiv{
+    background-color: var(--dark-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe{
+    font-size: 2.5rem;
+    color:var(--green);
+}
+.aboutDesc{
+    min-height: 35rem;
+    min-width: 90%;
+    /* background-color: #f0f0e6; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutLeft{
+    /* background-color: bisque; */
+    width: 50%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 8rem;
+}
+.aboutIcon{
+    font-family: MyFont;
+    font-size: 8rem;
+    /* font-weight: 1000; */
+    color: #25b79f;
+    /* background-color: #a4a4a416; */
+    /* border: 1px solid #07374a; */
+    min-width: 15rem;
+    max-height: 10rem;
+    border-radius: 15rem 15rem 5rem 5rem;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+/* .aboutIconChar{
+    padding-left: 0.3em;
+} */
+.aboutText{
+    max-width: 35rem;
+    /* background-color: burlywood; */
+    text-align: justify;
+    text-align-last: center;
+    color: var(--off-white);
+}
+.aboutProjects{
+    min-height: 10rem;
+    /* background-color: #e2f7ff; */
+    align-content: end;
+    color: var(--subghostwhite);
+}
+.projectLine{
+    display: flex;
+    align-items: center;
+}
+.lineArrow{
+    margin-left: 4px;
+}
+
+/* Right Side Contents */
+.aboutRight{
+    width: 50%;
+    min-height:100%;
+    background-color: red;
+}
+/* Portfolio Div Contents */
+.portfolioDiv{
+    background-color: var(--green);
+    min-height: 100vh;
+}
+.contactDiv{
+    background-color: var(--dark-blue);
+    min-height: 100vh;
+}
+
+.downButton{
+    border: 2px solid var(--subblack);
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 10px;
+    padding:0.5rem;
+    color:var(--subblack);
+}
+.downButton:hover{
+    cursor: pointer;
+    border: 2px solid var(--fullblack);
+    color:var(--fullblack);
+    transition: 0.1s;
+}
+
+.goTopButton{
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+
+}
