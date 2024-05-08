@@ -273,6 +273,7 @@ body{
 }
 .pfDesc{
     font-weight: 600;
+    font-size: 1.1rem;
 }
 .pfLink{
     text-decoration: none;
