@@ -54,10 +54,17 @@ function changeToGreen(){
 }
 function changeOnScroll(){
     console.log(window.scrollY)
+    // console.log(goTopButton)
     if (window.scrollY < window.innerHeight){
-        changeToGreen();
+        // changeToGreen();
+        goTopButton.classList.remove('flexDisplay');
+        goTopButton.classList.add('noneDisplay');
+        navname.classList.add('transparent');
     }else if(window.scrollY >= window.innerHeight){
-        changeToBlue();
+        // changeToBlue();
+        goTopButton.classList.remove('noneDisplay');
+        goTopButton.classList.add('flexDisplay');
+        navname.classList.remove('transparent');
     }
     
     // else if(window.scrollY >= window.innerHeight * 3){
@@ -76,7 +83,10 @@ const portfolioButton = document.getElementById("portfolioButton");
 const contactButton = document.getElementById("contactButton");
 const downButton = document.getElementById("downButton");
 const navContainer = document.getElementById("navContainer");
-
+const project1 = document.getElementById("project1");
+const project2 = document.getElementById("project2");
+const goTopButton = document.getElementById("goTopButton");
+const navname = document.getElementById("navname");
 
 aboutButton.addEventListener("click", function() {
     console.log("About button clicked");
@@ -102,5 +112,8 @@ downButton.addEventListener("click", function() {
     // changeToBlue();
     scrollToDivVerySmoothly('aboutDiv');
 });
-
-window.scrollTo(0, 600);
+goTopButton.addEventListener("click", function(){
+    console.log("Title button clicked");
+    scrollToDivVerySmoothly('titleDiv');
+})
+window.onscroll = changeOnScroll;

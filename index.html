@@ -6,7 +6,7 @@
     <body>
         <div class="navContainer bggreen" id="navContainer">
             <div class="navbar">
-                <h2 class="navname">ashok kumar velu</h2>
+                <h2 class="navname transparent" id="navname">ashok kumar velu</h2>
                 <div class="navbuttons">
                     <div class="navbutton" id="aboutButton">about</div>
                     <div class="navbutton" id="portfolioButton">portfolio</div>
@@ -17,7 +17,7 @@
         </div>
         <div class="container">
             <!-- First Block -->
-            <div class="titleDiv">
+            <div class="titleDiv" id="titleDiv">
                 <h1 class="titleName"> Hi, I'm Ashok</h1>
                 <h2 class="titleDesc"> a full stack veteran</h2>
                 <div class="downButton" id="downButton"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
@@ -41,7 +41,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="aboutRight"> RIGHT</div>    
+                    
+                    <!-- Section About Page Right Part. -->
+                    <div class="aboutRight"> 
+                        <div class="aboutToolText">Here's a few of the tools I use</div>
+                        <div class="aboutTools">
+                            <div>
+                                <ul class="aboutUl">
+                                    <li>Python </li>
+                                    <li>Node js </li>
+                                    <li>React</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="aboutUl">
+                                    <li>Django / Flask</li>
+                                    <li>MERN (Express)</li>
+                                    <li>Celery</li>
+                                    <li>Redis</li>
+                                    <li>MySQL</li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
 
                 
@@ -49,15 +73,61 @@
             <!-- Thrid Block -->
             <div class="portfolioDiv" id="portfolioDiv">
                 <div class="blankDiv"></div>
-                <h1> Portfolio </h1>
+                <div class="portfolioTitle"> Portfolio </div>
+                <div class="portfolioContents"> 
+                    <div class="portfolioRow"> 
+                        <!-- Project 1 -->
+                        <div class="portfolioColumn">
+                            <div class="portfolioSubText"> 
+                                <div class="pfTitle"> Splice </div>
+                                <div class="pfDesc"> A unique puzzle game. </div>
+                                <div class="pfDesc"> Html, CSS, Javascript</div>
+                                <a href="https://ashokv8.github.io/jsgames/splice/index.html" target="_blank" class="pfLink">
+                                    <div class="pfButton" id="project1"> View Project</div>
+                                </a>
+                            </div>    
+                            <div class="portfolioIcon"> 
+                                <img class="portfolioImg" src="scr/scr1.png">
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="portfolioColumn">
+                            <div class="portfolioIcon"> 
+                                <img class="portfolioImg" src="scr/scr2.png">
+                            </div>
+                            <div class="portfolioSubText"> 
+                                <div class="pfTitle"> Maze Runner </div>
+                                <div class="pfDesc"> Dynamicly Generated Maze Game</div>
+                                <div class="pfDesc"> Html, CSS, Javascript</div>
+                                <a href="https://ashokv8.github.io/jsgames/sleek/sleek.html" target="_blank" class="pfLink">
+                                    <div class="pfButton" id="project2"> View Project</div>
+                                </a>
+                            </div>    
+                            
+                        </div>
+                    </div>
+                    <!-- <div> Row2 </div> -->
+                </div>
             </div>
+
             <!-- Foruth Block -->
             <div class="contactDiv" id="contactDiv">
                 <div class="blankDiv"></div>
-                <h1> Contact </h1>
+                <div class="contactMe"> Contact Me </div>
+                <div class="contactText">Get in touch with me on  ->  ashokkumar3991@gmail.com</div>
+                <div class="contactFindMe"> or find me on </div>
+                <div class="contactLinks">
+                    <a class="greenColor" href="https://github.com/ashokv8" target="_blank">
+                        <i class="fa fa-github greenColor"></i> Github 
+                    </a>
+                    <a class="greenColor" href="https://www.linkedin.com/in/ashokkumar3991/" target="_blank">
+                        <i class="fa fa-linkedin-square greenColor"></i> LinkedIn 
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="goTopButton" id="goTopButton"> Top </div>
+        <div class="goTopButton noneDisplay" id="goTopButton"> <i class="fa fa-solid fa-arrow-up "></i> </div>
     
     <script src="index.js"></script>
     </body>
